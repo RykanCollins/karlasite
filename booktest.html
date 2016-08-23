@@ -3,10 +3,18 @@
 <head>
 
 <title>Layout for Karla</title>
+<link href="http://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <style>
+htitle{
+	/* Using the custom font we've included in the HTML tab: */
+	font-family: Satisfy, cursive;
+	font-weight:normal;
+	font-size:32px;
+	padding-top: 60px;
+}
 .item {
   width: 200px;
   height: 200px;
@@ -110,6 +118,10 @@
   -ms-transform: rotate3d(0, 1, 0, -150deg);
   transform: rotate3d(0, 1, 0, -150deg);
 }
+article
+{
+display: block;
+}
 </style>
   <!--[if lt IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -119,7 +131,7 @@
 <body>
 
 <header class="w3-container w3-light-grey">
-  <h1 class="w3-xxLarge">Company Name / LOGO</h1>
+  <htitle>Company Name / LOGO</htitle>
   <p class="w3-large">This site will grow as we add more ...</p>
 </header>
 
@@ -256,7 +268,15 @@
 <footer class="w3-container" style = "background-image:url(wood.jpg)">
   <p>bookshelf</p>
 </footer>
-
+<br>
+<div class="w3-container w3-light-grey">
+	<article>
+	<h2>Testimonials</h2>
+	<p>
+	Place holders for top testimonial
+	</p>
+	</article>
+</div>
 <script>$('.item').click(function() {
   $(this).toggleClass('open');
 });</script>
