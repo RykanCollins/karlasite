@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Case</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<style>
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 0%;
+  position: relative;
+  cursor: default;
+  padding-top: 30px;
+  
+
+}
+.info-wrap {
+  width: 100%;
+  height: 100%;
+  border-radius: 0%;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  -ms-perspective: 800px;
+  perspective: 800px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  top: 20px;
+  left: 20px;
+
+}
+.info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 0%;
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  -o-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  z-index: 9999999;
+}
+.info > div {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 0%;
+  background-position: center center;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.info .info-back {
+  -webkit-transform: rotate3d(0, 1, 0, 180deg);
+  -moz-transform: rotate3d(0, 1, 0, 180deg);
+  -o-transform: rotate3d(0, 1, 0, 180deg);
+  -ms-transform: rotate3d(0, 1, 0, 180deg);
+  transform: rotate3d(0, 1, 0, 180deg);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#103b72+0,13539f+50 */
+  background: #103b72;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #103b72 0%, #13539f 50%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #103b72 0%, #13539f 50%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #103b72 0%, #13539f 50%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#103b72', endColorstr='#13539f', GradientType=1);
+  /* IE6-9 */
+}
+.info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin: 0 15px;
+  padding: 40px 0 0 0;
+  height: 90px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.info-wrap {
+  background: #125daa; <!--this is the background after book opens (page)-->
+}
+.item.open .info {
+  -webkit-transform: rotate3d(0, 1, 0, -150deg);
+  -moz-transform: rotate3d(0, 1, 0, -150deg);
+  -o-transform: rotate3d(0, 1, 0, -150deg);
+  -ms-transform: rotate3d(0, 1, 0, -150deg);
+  transform: rotate3d(0, 1, 0, -150deg);
+}
+</style>
+
+<body>
+
+<header class="w3-container w3-light-grey">
+  <h1 class="w3-xxLarge">Company Name / LOGO</h1>
+  <p class="w3-large">This site will grow as we add more ...</p>
+</header>
+
+<div class="w3-row-padding">
+  <div class="w3-third">
+    <div class="grid-item item grid-item--width2 grid-item--height4">
+  <div class="item" >
+    <div class="info-wrap">
+      <div class="info">
+        <div class="info-front" style="background-image: url(img_fjords.jpg);"><!--this will set the background for front of book-->
+          <div class="align-center">
+            <div class="advent-date current">Test Title</div>
+            <h4 class="text-center">CLICK TO OPEN</h4>
+          </div>
+        </div>
+        <div class="info-back">
+		<p style="color: white">This is where text could go?</p> <!--inside cover-->
+        </div>
+      </div>
+	  	<p>Where is this</p> <!--This is the inside of the book-->
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="w3-third">
+    <div class="grid-item item grid-item--width2 grid-item--height4">
+  <div class="item" >
+    <div class="info-wrap">
+      <div class="info">
+        <div class="info-front" style="background-image: url(img_fjords.jpg);"><!--this will set the background for front of book-->
+          <div class="align-center">
+            <div class="advent-date current">Test Title</div>
+            <h4 class="text-center">CLICK TO OPEN</h4>
+          </div>
+        </div>
+        <div class="info-back">
+		<p style="color: white">This is where text could go?</p> <!--inside cover-->
+        </div>
+      </div>
+	  	<p>Where is this</p> <!--This is the inside of the book-->
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="w3-third">
+    <div class="grid-item item grid-item--width2 grid-item--height4">
+  <div class="item" >
+    <div class="info-wrap">
+      <div class="info">
+        <div class="info-front" style="background-image: url(img_fjords.jpg);"><!--this will set the background for front of book-->
+          <div class="align-center">
+            <div class="advent-date current">Test Title</div>
+            <h4 class="text-center">CLICK TO OPEN</h4>
+          </div>
+        </div>
+        <div class="info-back">
+		<p style="color: white">This is where text could go?</p> <!--inside cover-->
+        </div>
+      </div>
+	  	<p>Where is this</p> <!--This is the inside of the book-->
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+<footer class="w3-container w3-brown">
+  <p>bookshelf</p>
+</footer>
+<!--second shelf-->
+<div class="w3-row-padding">
+  <div class="w3-third">
+    <div class="grid-item item grid-item--width2 grid-item--height4">
+  <div class="item" >
+    <div class="info-wrap">
+      <div class="info">
+        <div class="info-front" style="background-image: url(img_fjords.jpg);"><!--this will set the background for front of book-->
+          <div class="align-center">
+            <div class="advent-date current">Test Title</div>
+            <h4 class="text-center">CLICK TO OPEN</h4>
+          </div>
+        </div>
+        <div class="info-back">
+		<p style="color: white">This is where text could go?</p> <!--inside cover-->
+        </div>
+      </div>
+	  	<p>Where is this</p> <!--This is the inside of the book-->
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="w3-third">
+    <div class="grid-item item grid-item--width2 grid-item--height4">
+  <div class="item" >
+    <div class="info-wrap">
+      <div class="info">
+        <div class="info-front" style="background-image: url(img_fjords.jpg);"><!--this will set the background for front of book-->
+          <div class="align-center">
+            <div class="advent-date current">Test Title</div>
+            <h4 class="text-center">CLICK TO OPEN</h4>
+          </div>
+        </div>
+        <div class="info-back">
+		<p style="color: white">This is where text could go?</p> <!--inside cover-->
+        </div>
+      </div>
+	  	<p>Where is this</p> <!--This is the inside of the book-->
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="w3-third">
+    <div class="grid-item item grid-item--width2 grid-item--height4">
+  <div class="item" >
+    <div class="info-wrap">
+      <div class="info">
+        <div class="info-front" style="background-image: url(img_fjords.jpg);"><!--this will set the background for front of book-->
+          <div class="align-center">
+            <div class="advent-date current">Test Title</div>
+            <h4 class="text-center">CLICK TO OPEN</h4>
+          </div>
+        </div>
+        <div class="info-back">
+		<p style="color: white">This is where text could go?</p> <!--inside cover-->
+        </div>
+      </div>
+	  	<p>Where is this</p> <!--This is the inside of the book-->
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+<footer class="w3-container w3-brown">
+  <p>bookshelf</p>
+</footer>
+
+<script>$('.item').click(function() {
+  $(this).toggleClass('open');
+});</script>
+</body>
+</html>
